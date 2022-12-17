@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import { useCopyToClipboard } from './hooks/useCopyToClipboard';
 
 function App() {
+  const [copied, copyToClipboard] = useCopyToClipboard();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={() =>
+        copyToClipboard('Copy Text', 3000)}>Copy</button>
+      {copied ? "text copied" : "Copy"}
     </div>
   );
 }
