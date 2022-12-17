@@ -1,5 +1,6 @@
 import './App.css';
-import { useCopyToClipboard } from './hooks/useCopyToClipboard';
+import React from 'react';
+import { useCopyToClipboard } from "use-copy-clipboard-hook";
 
 function App() {
   const [copied, copyToClipboard] = useCopyToClipboard();
