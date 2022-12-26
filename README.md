@@ -1,7 +1,7 @@
 
-# Copy Clipboard Custom Hook
+# Copy Clipboard Custom Hook🪝
 
-The easiest way to use Clipboard in React
+The easiest way to use Clipboard in React🪝
 
 ## Installation
 ```bash
